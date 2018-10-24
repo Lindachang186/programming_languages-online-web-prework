@@ -14,3 +14,4 @@ def reformat_languages(languages)
   return new_hash
 end
 end
+end
