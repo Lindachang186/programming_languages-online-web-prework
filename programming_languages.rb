@@ -5,11 +5,10 @@ def reformat_languages(languages)
   languages.each do |key, value|
     value.each do |language, data|
       data.each do |type, info|
-      if key == :oo
-        new_hash[language]={ type=> info}
-      elsif key == :functional
-        new_hash[language]={ type=> info}
-    end
+        if new_hash[language_style]
+          languages.push(language)
+        else new_hash.push([language]={ type=> info})
+        end
   end
   return new_hash
 end
