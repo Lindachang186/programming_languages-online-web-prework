@@ -6,9 +6,9 @@ def reformat_languages(languages)
     v.each do |language, data|
       data.each do |type, info|
         if new_hash[language] == nil
-          new_hash[language]= { type=> info, :k => [key]}
+          new_hash[language]= { type=> info, :k => [k]}
         else
-          new_hash[language][:k] << key
+          new_hash[language][:k] << k
         end
       end
     end
