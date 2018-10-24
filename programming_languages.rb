@@ -8,4 +8,5 @@ def reformat_languages(languages)
       hash[language] = {}
     end
   end
+  return new_hash
 end
