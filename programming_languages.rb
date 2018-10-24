@@ -7,7 +7,7 @@ def reformat_languages(languages)
       data.each do |type, info|
         if new_hash[language]
           new_hash[languages][:key].push(key)
-        else 
+        else
   			new_hash[language]= { type=> info, :key => [key]}
         end
   end
