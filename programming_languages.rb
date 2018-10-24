@@ -8,7 +8,7 @@ def reformat_languages(languages)
         binding.pry
         if new_hash[language]
           [:key].push(key)
-        else new_hash[language]= { type=> info}
+        else new_hash[language]= { type=> info, :key => [key]}
         end
   end
   return new_hash
