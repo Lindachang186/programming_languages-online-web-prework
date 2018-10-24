@@ -8,7 +8,7 @@ def reformat_languages(languages)
         binding.pry
         if new_hash[language_style]
           languages.push(language)
-        else new_hash.push([language]={ type=> info})
+        else new_hash.push([language]= { type=> info})
         end
   end
   return new_hash
