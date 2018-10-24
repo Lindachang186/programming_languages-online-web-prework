@@ -2,14 +2,14 @@ require "pry"
 
 def reformat_languages(languages)
   new_hash = {}
-  languages.each do |k, v|
+  languages.each do |style, v|
     v.each do |language, data|
       data.each do |type, info|
         binding.pry
         if new_hash[language] == nil
-          new_hash[language]= { type=> info, :k => [k]}
+          new_hash[language]= { type=> info, :style => [style]}
         else
-          new_hash[language][:k] << k
+          new_hash[language][:style] << style
         end
       end
     end
