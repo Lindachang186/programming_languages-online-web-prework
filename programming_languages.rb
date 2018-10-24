@@ -6,10 +6,10 @@ def reformat_languages(languages)
     value.each do |language, data|
       data.each do |type, info|
         binding.pry
-        if new_hash[language]
-          new_hash[language][:key] << key
+        if new_hash[language] == nil
+          new_hash[language]= { type=> info, :key => [key]}
         else
-  			new_hash[language]= { type=> info, :key => [key]}
+          new_hash[language][:key] << key
         end
   end
 end
