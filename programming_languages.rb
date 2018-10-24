@@ -5,8 +5,8 @@ def reformat_languages(languages)
   languages.each do |key, value|
     value.each do |language, data|
       data.each do |type, info|
-      hash[language] = {type : "info"}
-    end
+      hash[language] = {type: "info"}
+    endx
   end
   return new_hash
 end
