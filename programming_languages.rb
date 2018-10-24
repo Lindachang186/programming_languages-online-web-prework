@@ -9,7 +9,7 @@ def reformat_languages(languages)
         if new_hash[language]
           new_hash[language][:key].push(key)
         else
-  			new_hash[language]= { type=> info, :key => [key]}
+  			new_hash[language]= { type=> info, type => [key]}
         end
   end
 end
