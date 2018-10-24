@@ -6,7 +6,9 @@ def reformat_languages(languages)
     value.each do |language, data|
       data.each do |type, info|
       if key == :oo
-        new_hash[langauge]={ type=> info}
+        new_hash[language]={ type=> info}
+      elsif key == :functional
+        new_hash[language]={ type=> info}
     end
   end
   return new_hash
