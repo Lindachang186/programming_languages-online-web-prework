@@ -11,7 +11,7 @@ def reformat_languages(languages)
   			new_hash[language]= { type=> info, :key => [key]}
         end
   end
-  return new_hash
 end
 end
+return new_hash
 end
